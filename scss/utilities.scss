@@ -1,0 +1,59 @@
+* {
+  font-family: "Barlow", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #444;
+}
+
+@mixin sub-title {
+  h3 {
+    letter-spacing: 1px;
+    padding-left: 5px;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 20px;
+  }
+}
+
+@mixin label-text {
+  color: #31b382;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+@mixin input-placeholder {
+  & input {
+    margin-left: 5px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 3px solid #1c7;
+    background: transparent;
+    padding: 10px;
+    width: 10rem;
+
+    &:focus {
+      outline: none;
+      color: #fff;
+      border-bottom: 3px solid #5f1;
+      background: linear-gradient(to bottom, transparent, #222);
+    }
+
+    &::placeholder {
+      color: #fff;
+    }
+  }
+}
+
+@mixin select {
+  & select {
+    margin-left: 5px;
+    color: #fff;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+
+    &:hover {
+      border: 1px solid #1c7;
+    }
+  }
+}

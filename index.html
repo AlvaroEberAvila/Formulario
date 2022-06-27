@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./public/css/custom.css">
+</head>
+
+<body>
+    <main>
+        <div class="title">
+            <h1>Registration</h1>
+        </div>
+        <div class="container-account">
+            <h3>Account Details</h3>
+            <span>* Obligatory Fields</span>
+            <form>
+                <div class="container-account__email">
+                    <label>Email*<input type="email" placeholder="EJ: pepito@hotmail.com" required></label>
+                    <label>Repeat Email*<input type="email" placeholder="Repeat to Email" required></label>
+                </div>
+                <div class="container-account__password">
+                    <label>Password*<input type="password" placeholder="Enter your Password" required></label>
+                    <label>Repeat Password*<input type="password" placeholder="Repeat to Password" required></label>
+                </div>
+            </form>
+        </div>
+        <div class="container-personal">
+            <h3>Personal Details</h3>
+            <form>
+                <label>Name*<input type="text" placeholder="EJ: Pepito Juan" required></label>
+                <label>Phone*<input type="tel" placeholder="EJ: 123456789" required></label>
+                <label>Street*<input type="text" placeholder="EJ: San Ramon" required></label>
+                <label>City*<input type="text" placeholder="EJ: Alta Cordoba" required></label>
+                <label>Country*<select name="country" required>
+                        <option value="1" disabled selected>Country</option>
+                        <option value="2">Argentina</option>
+                        <option value="3">Brazil</option>
+                        <option value="4">Mexico</option>
+                        <option value="5">Peru</option>
+                        <option value="6">Ecuador</option>
+                        <option value="7">Colombia</option>
+                        <option value="8">Chile</option>
+                        <option value="9">Bolivia</option>
+                        <option value="10">Venezuela</option>
+                    </select></label>
+                <label>Website*<input type="email" value="https://" required></label>
+            </form>
+        </div>
+        <div class="container-information">
+            <h3>Further Information</h3>
+            <form>
+                <label>Gender*<input type="radio" name="gender" value="male"><span>Male</span>
+                    <input type="radio" name="gender" value="female"><span>Female</span></label>
+                <label>BirthDate*<select name="Day" required>
+                        <option value="0" disabled selected>Day</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                        <option value="32">32</option>
+                    </select>
+                    <select name="Month" required>
+                        <option value="0" disabled selected>Month</option>
+                        <option value="1">January</option>
+                        <option value="2">February</option>
+                        <option value="3">March</option>
+                        <option value="4">April</option>
+                        <option value="5">May</option>
+                        <option value="6">June</option>
+                        <option value="7">July</option>
+                        <option value="8">August</option>
+                        <option value="9">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                    </select>
+                    <select name="Year" required>
+                        <option value="0" disabled selected>Year</option>
+                        <option value="1">1999</option>
+                        <option value="2">2000</option>
+                        <option value="3">2001</option>
+                        <option value="4">2002</option>
+                        <option value="5">2003</option>
+                        <option value="6">2004</option>
+                        <option value="7">2005</option>
+                        <option value="8">2006</option>
+                        <option value="9">2007</option>
+                        <option value="10">2008</option>
+                        <option value="11">2009</option>
+                        <option value="12">2010</option>
+                        <option value="13">2011</option>
+                        <option value="14">2012</option>
+                        <option value="15">2013</option>
+                    </select></label>
+                <label>Nationality*<select name="nationality" required>
+                        <option value="1" disabled selected>Nationality</option>
+                        <option value="2">Argentine</option>
+                        <option value="3">Brazilian</option>
+                        <option value="4">Mexican</option>
+                        <option value="5">Peruvian</option>
+                        <option value="6">Ecuadorian</option>
+                        <option value="7">Colombian</option>
+                        <option value="8">Chilean</option>
+                        <option value="9">Bolivian</option>
+                        <option value="10">Venezuelan</option>
+                    </select></label>
+                <label>Children*<input type="checkbox" required></label>
+            </form>
+        </div>
+        <div class="container-helpful">
+            <label>
+                <textarea cols="55" rows="10"
+                    readonly>Helpful Information
+                    
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere in laudantium minima id, unde delectus voluptatum culpa, blanditiis quasi praesentium illum aliquam ex aliquid quis asperiores quaerat expedita. Assumenda, et?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut natus aliquid distinctio quia delectus aspernatur? Dolores iste option nesciunt vero repudiandae atque cupiditate repellendus, hic quam perferendis consequatur vitae corrupti.</textarea></label>
+            <button>Register</button>
+        </div>
+        <div class="container-term">
+            <h3>Terms and Mailing</h3>
+            <form>
+                <label><input type="checkbox" required>*I accept the Terms and Conditions</label>
+                <label><input type="checkbox">I want to receive personalized offers by your site</label>
+                <label><input type="checkbox">Allow partners to send me personalized offers and related services</label>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
